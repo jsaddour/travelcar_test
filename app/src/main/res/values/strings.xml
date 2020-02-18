@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TravelcarTest</string>
+    <string name="title_search">Search</string>
+    <string name="title_vehicle">Vehicle</string>
+    <string name="title_my_account">My account</string>
+    <string name="error_occurred">An error occured</string>
+    <string name="error_connection">No internet connection</string>
+    <string name="error_timeout">Connection timeout, please retry</string>
+    <string name="error_captive_portal">Captive portal error</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_myAccount">
+
+    <fragment
+        android:id="@+id/navigation_myAccount"
+        android:name="com.example.travelcartest.ui.account.MyAccountFragment"
+        android:label="@string/title_my_account"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.travelcartest.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment"
+            app:popUpTo="@+id/navigation_search" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDetailsFragment"
+        android:label="@string/title_vehicle"
+        android:name="com.example.travelcartest.ui.search.VehicleDetailsFragment">
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+
+
+</navigation>
