@@ -6,22 +6,27 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.example.travelcartest.data.converters.DateConverter
 import com.example.travelcartest.data.converters.EquipmentsConverter
+import com.example.travelcartest.data.dao.AccountDao
 import com.example.travelcartest.data.dao.VehicleDao
+import com.example.travelcartest.data.entity.Account
 import com.example.travelcartest.data.entity.Vehicle
 
 import java.util.concurrent.Executors
 
 @Database(
-    entities = [Vehicle::class],
+    entities = [Vehicle::class, Account::class],
     version = 1,
     exportSchema = false
 )
 @TypeConverters(
-    EquipmentsConverter::class
+    EquipmentsConverter::class,
+    DateConverter::class
 )
 abstract class TravelCarDb : RoomDatabase() {
     abstract fun vehicleDao(): VehicleDao
+    abstract fun accountDao(): AccountDao
 
 
     companion object {

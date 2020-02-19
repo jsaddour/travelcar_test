@@ -7,4 +7,10 @@
     <string name="error_connection">No internet connection</string>
     <string name="error_timeout">Connection timeout, please retry</string>
     <string name="error_captive_portal">Captive portal error</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="address">Address</string>
+    <string name="save">Save</string>
 </resources>

@@ -62,6 +62,7 @@ class SearchFragment : Fragment() {
 
         searchViewModel.fetchVehicles()
         searchViewModel.getVehicles().observe(this, Observer { vehicles ->
+            activity?.invalidateOptionsMenu()
             swipe_refresh_layout.isRefreshing = false
             adapter.updateList(ArrayList(vehicles))
         })
