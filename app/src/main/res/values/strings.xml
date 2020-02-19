@@ -8,6 +8,8 @@
     <string name="error_timeout">Connection timeout, please retry</string>
     <string name="error_captive_portal">Captive portal error</string>
 
+    <string name="equipements">Equipements: </string>
+
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="birthdate">Birthdate</string>
